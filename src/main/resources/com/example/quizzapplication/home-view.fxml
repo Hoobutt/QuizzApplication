@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.Controller">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.HomeController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -33,7 +33,7 @@
             <VBox prefHeight="100.0" prefWidth="118.0">
                <children>
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
-                  <Button minHeight="-Infinity" mnemonicParsing="false" prefHeight="77.0" prefWidth="126.0" text="Quiz" />
+                  <Button fx:id="quizButton" minHeight="-Infinity" mnemonicParsing="false" onAction="#onQuizButtonClick" prefHeight="77.0" prefWidth="126.0" text="Quiz" />
                   <Separator orientation="VERTICAL" prefHeight="200.0" />
                </children>
             </VBox>
@@ -43,10 +43,10 @@
       <ButtonBar buttonMinWidth="75.0" prefHeight="40.0" prefWidth="200.0">
         <buttons>
             <Separator prefWidth="200.0" />
-          <Button mnemonicParsing="false" text="Social" />
-            <Button mnemonicParsing="false" text="About" />
-            <Button mnemonicParsing="false" text="Contact" />
-            <Button mnemonicParsing="false" text="Credit" />
+          <Button fx:id="socialButton" mnemonicParsing="false" onAction="#onSocialButtonClick" text="Social" />
+            <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
+            <Button fx:id="contactButton" mnemonicParsing="false" onAction="#onContactButtonClick" text="Contact" />
+            <Button fx:id="creditsButton" mnemonicParsing="false" onAction="#onCreditsButtonClick" text="Credit" />
             <Separator prefWidth="200.0" />
         </buttons>
       </ButtonBar>
