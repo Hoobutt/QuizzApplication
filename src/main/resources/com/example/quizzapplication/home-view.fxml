@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.HomeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Echo Quiz" textAlignment="CENTER" wrappingWidth="559.892578125" />
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="100.0">
+         <children>
+            <VBox fillWidth="false" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="50.0" />
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="560.0" text="Admin Login" />
+                  <TextField alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="560.0" text="Password" textAlignment="CENTER" />
+                  <TextField alignment="CENTER" maxWidth="-Infinity" prefHeight="25.0" prefWidth="160.0">
+                     <VBox.margin>
+                        <Insets left="100.0" right="100.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="118.0">
+               <children>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <Button fx:id="quizButton" minHeight="-Infinity" mnemonicParsing="false" onAction="#onQuizButtonClick" prefHeight="77.0" prefWidth="126.0" text="Quiz" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator orientation="VERTICAL" prefHeight="50.0" />
+      <ButtonBar buttonMinWidth="75.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Separator prefWidth="200.0" />
+          <Button fx:id="socialButton" mnemonicParsing="false" onAction="#onSocialButtonClick" text="Social" />
+            <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
+            <Button fx:id="contactButton" mnemonicParsing="false" onAction="#onContactButtonClick" text="Contact" />
+            <Button fx:id="creditsButton" mnemonicParsing="false" onAction="#onCreditsButtonClick" text="Credit" />
+            <Separator prefWidth="200.0" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</VBox>
