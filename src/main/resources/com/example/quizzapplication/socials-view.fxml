@@ -2,23 +2,25 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
 
 <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.miscControllers.SocialsController">
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-  </rowConstraints>
-   <children>
-      <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="375.0" text="Social 1" />
-      <Button mnemonicParsing="false" prefHeight="95.0" prefWidth="379.0" text="Social 2" GridPane.columnIndex="1" />
-      <Button mnemonicParsing="false" prefHeight="87.0" prefWidth="367.0" text="Social 3" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" prefHeight="89.0" prefWidth="303.0" text="Social 4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="427.0" text="Social 5" GridPane.rowIndex="2" />
-      <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="51.0" prefWidth="177.0" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-   </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Button fx:id="GitHub" mnemonicParsing="false" prefHeight="94.0" prefWidth="375.0" text="GitHub" onAction="#GitHub" style="-fx-background-color: #FF987D; -fx-text-fill: #007bff; -fx-border-color: transparent;" />
+        <Button fx:id="Twitter" mnemonicParsing="false" prefHeight="95.0" prefWidth="379.0" text="Twitter" onAction="#Twitter" style="-fx-background-color: #7AFDFF; -fx-text-fill: #007bff; -fx-border-color: transparent;" GridPane.columnIndex="1" />
+        <Button fx:id="LinkedIn" mnemonicParsing="false" prefHeight="87.0" prefWidth="367.0" text="LinkedIn" onAction="#LinkedIn" style="-fx-background-color: #529FFF; -fx-text-fill: #007bff; -fx-border-color: transparent;" GridPane.rowIndex="1" />
+        <Button fx:id="Discord" mnemonicParsing="false" prefHeight="89.0" prefWidth="303.0" text="Discord" onAction="#Discord" style="-fx-background-color: #2360A1; -fx-text-fill: #007bff; -fx-border-color: transparent;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="Instagram" mnemonicParsing="false" prefHeight="80.0" prefWidth="427.0" text="Instagram" onAction="#Instagram" style="-fx-background-color: #F051EC; -fx-text-fill: #007bff; -fx-border-color: transparent;" GridPane.rowIndex="2" />
+        <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="51.0" prefWidth="177.0" text="Back" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    </children>
 </GridPane>
