@@ -12,14 +12,13 @@ public class SocialsController {
     @FXML
     private Button Instagram;
     @FXML
-    private Button Discord;
+    private Button Reddit;
     @FXML
     private Button GitHub;
     @FXML
     private Button LinkedIn;
     @FXML
     private Button Twitter;
-
 
     @FXML
     protected void onBackButtonClick() {
@@ -38,8 +37,8 @@ public class SocialsController {
         openWebPage("https://www.linkedin.com/in/echo-echo-143927388/");
     }
     @FXML
-    protected void Discord() {
-        openWebPage("https://discord.com/users/1427094960771043339");
+    protected void Reddit() {
+        openWebPage("https://www.reddit.com/user/GroupEchoQuiz/");
     }
     @FXML
     protected void Instagram() {
