@@ -27,12 +27,12 @@
                     <children>
                   <AnchorPane prefHeight="187.0" prefWidth="726.0">
                      <children>
-                        <Button layoutX="84.0" layoutY="119.0" mnemonicParsing="false" text="Login" />
+                        <Button fx:id="loginButton" layoutX="83.0" layoutY="119.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
                               <Label alignment="CENTER" layoutX="-171.0" layoutY="5.0" prefHeight="17.0" prefWidth="560.0" text="Admin Login" />
                               <TextField alignment="CENTER" layoutX="52.0" layoutY="24.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" />
                               <Label alignment="CENTER" layoutX="-171.0" layoutY="55.0" prefHeight="17.0" prefWidth="560.0" text="Password" textAlignment="CENTER" />
                               <TextField alignment="CENTER" layoutX="29.0" layoutY="80.0" maxWidth="-Infinity" prefHeight="25.0" prefWidth="160.0" />
-                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="160.0" mnemonicParsing="false" text="Reigster " />
+                        <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="160.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Reigster" />
                               <Button fx:id="quizButton" layoutX="350.0" layoutY="55.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#onQuizButtonClick" prefHeight="77.0" prefWidth="129.0" text="Quiz" />
                         <Label layoutX="355.0" layoutY="136.0" text="Click to take Quizzes" />
                      </children>
@@ -49,7 +49,7 @@
                       <Button fx:id="socialButton" mnemonicParsing="false" onAction="#onSocialButtonClick" text="Social" />
                       <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
                       <Button fx:id="contactButton" mnemonicParsing="false" onAction="#onContactButtonClick" text="Contact" />
-                      <Button fx:id="creditsButton" mnemonicParsing="false" onAction="#onCreditsButtonClick" text="Credit" />
+                      <Button fx:id="creditsButton" mnemonicParsing="false" onAction="#onCreditsButtonClick" text="Credits" />
                       <Separator prefWidth="200.0" visible="false" />
                   </buttons>
               </ButtonBar>
