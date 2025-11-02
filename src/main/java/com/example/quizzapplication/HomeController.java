@@ -14,6 +14,10 @@ public class HomeController {
     private Button creditsButton;
     @FXML
     private Button quizButton;
+    @FXML
+    private Button loginButton;
+    @FXML
+    private Button registerButton;
 
     // Event Handlers for each button
     @FXML
@@ -22,7 +26,7 @@ public class HomeController {
     }
     @FXML
     protected void onAboutButtonClick() {
-        Application.changeScene("about-view.fxml", aboutButton.getScene());
+        Application.largeScene("about-view.fxml", aboutButton.getScene());
     }
     @FXML
     protected void onContactButtonClick() {
@@ -34,6 +38,14 @@ public class HomeController {
     }
     @FXML
     protected void onQuizButtonClick() {
-
+        Application.largeScene("quizPage-view.fxml", quizButton.getScene());
+    }
+    @FXML
+    protected void onLoginButtonClick(){
+        Application.largeScene("admin-view.fxml", loginButton.getScene()); //Goes to admin-view
+    }
+    @FXML
+    protected void onRegisterButtonClick(){
+        Application.changeScene("register-view.fxml", registerButton.getScene());
     }
 }

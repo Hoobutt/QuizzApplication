@@ -4,7 +4,7 @@ import com.example.quizzapplication.Application;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class ContactController {
+public class AdminController {
     @FXML
     private Button backButton;
 

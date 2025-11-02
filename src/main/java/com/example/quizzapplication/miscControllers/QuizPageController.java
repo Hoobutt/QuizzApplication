@@ -4,7 +4,7 @@ import com.example.quizzapplication.Application;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class ContactController {
+public class QuizPageController {
     @FXML
     private Button backButton;
 
@@ -12,4 +12,5 @@ public class ContactController {
     protected void onBackButtonClick() {
         Application.changeScene("home-view.fxml", backButton.getScene());
     }
+
 }
