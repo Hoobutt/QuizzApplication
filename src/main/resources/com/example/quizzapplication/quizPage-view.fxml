@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="rootPane" minHeight="1080.0" minWidth="1920.0" style="-fx-background-color: #FFA88F;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.miscControllers.QuizPageController">
-                 <Button fx:id="backButton" layoutX="890.0" layoutY="1010.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: white; -fx-text-fill: #333; -fx-font-size: 14; -fx-padding: 10 20;" text="Return to Home" />
-</AnchorPane>
+<ScrollPane fx:id="mainScrollPane" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/25"
+            fx:controller="com.example.quizzapplication.miscControllers.QuizHomePageController"
+            fitToWidth="true"
+            fitToHeight="true">
+    <content>
+        <AnchorPane fx:id="mainAnchorPane" style="-fx-background-color: #FFA88F;">
+            <children>
+                <Button fx:id="backButton" onAction="#onBackButtonClick" AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0" mnemonicParsing="false" text="Back" prefWidth="80.0" prefHeight="30.0"/>
+            </children>
+        </AnchorPane>
+    </content>
+</ScrollPane>
