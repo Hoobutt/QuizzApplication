@@ -2,88 +2,88 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<ScrollPane fitToWidth="true" fitToHeight="true" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.miscControllers.AboutController">
-    <content>
-        <VBox style="-fx-background-color: #FFA88F;" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+<AnchorPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.quizzapplication.miscControllers.AboutController"
+            style="-fx-background-color: #FFA88F;">
+    <children>
+        <GridPane AnchorPane.topAnchor="0.0"
+                  AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.3" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.3" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.3" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
+            </rowConstraints>
             <children>
-                <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
-                    <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.3" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.3" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.3" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
-                    </rowConstraints>
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                     <children>
-                        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 3" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 5" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 2" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 4" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 6" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.rowIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 5" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.rowIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 3" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                            <children>
-                                <Label text="Person 1" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
-                                <Label text="Role/Description" style="-fx-font-size: 14px;"/>
-                            </children>
-                        </VBox>
-                        <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="2">
-                            <children>
-                                <Button fx:id="backButton" onAction="#onBackButtonClick"
-                                        AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="20.0"
-                                        mnemonicParsing="false" text="Back"
-                                        prefWidth="80.0" prefHeight="30.0"/>
-                            </children>
-                        </AnchorPane>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 3" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
                     </children>
-                </GridPane>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 5" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 2" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 4" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 6" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 5" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 3" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 1" />
+                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                    </children>
+                </VBox>
+                <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick"
+                                prefHeight="30.0" prefWidth="80.0" text="Back"
+                                AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                    </children>
+                </AnchorPane>
             </children>
-        </VBox>
-    </content>
-</ScrollPane>
+        </GridPane>
+    </children>
+</AnchorPane>
