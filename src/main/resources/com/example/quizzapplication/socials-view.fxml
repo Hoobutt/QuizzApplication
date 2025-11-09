@@ -61,7 +61,7 @@
          </graphic></Button>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <children>
-            <Button fx:id="backButton" onAction="#onBackButtonClick" contentDisplay="CENTER" layoutX="241.0" layoutY="92.0" mnemonicParsing="false" text="Back" />
+            <Button fx:id="backButton" contentDisplay="CENTER" layoutX="241.0" layoutY="92.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #E67E73; -fx-text-fill: white;" text="Back" />
          </children>
       </AnchorPane>
     </children>

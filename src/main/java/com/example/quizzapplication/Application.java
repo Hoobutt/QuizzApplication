@@ -48,7 +48,7 @@ public class Application extends javafx.application.Application {
         }
         Stage stage = (Stage) currentScene.getWindow();
         stage.setScene(newScene);
-        stage.setMaximized(true);  // Fullscreen windowed
+        stage.setMaximized(true);
         stage.centerOnScreen();
     }
 }

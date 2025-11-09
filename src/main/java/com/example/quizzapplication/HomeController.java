@@ -13,8 +13,6 @@ public class HomeController {
     @FXML
     private Button creditsButton;
     @FXML
-    private Button quizButton;
-    @FXML
     private Button loginButton;
     @FXML
     private Button registerButton;
