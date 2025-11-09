@@ -7,7 +7,7 @@
 
 <AnchorPane fx:id="rootPane" minHeight="1080.0" minWidth="1920.0" style="-fx-background-color: #FFA88F;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.miscControllers.AdminController">
 
-    <Button fx:id="backButton" layoutX="890.0" layoutY="1010.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: white; -fx-text-fill: #333; -fx-font-size: 14; -fx-padding: 10 20;" text="Return to Home" />
+    <Button fx:id="backButton" layoutX="905.0" layoutY="1008.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #E67E73; -fx-text-fill: white;" text="Return to Home" />
    <Label layoutX="742.0" layoutY="27.0" text="Admin Window">
       <font>
          <Font size="64.0" />
