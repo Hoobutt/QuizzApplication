@@ -13,8 +13,6 @@ public class HomeController {
     @FXML
     private Button creditsButton;
     @FXML
-    private Button quizButton;
-    @FXML
     private Button loginButton;
     @FXML
     private Button registerButton;
@@ -37,12 +35,8 @@ public class HomeController {
         Application.changeScene("credits-view.fxml", creditsButton.getScene());
     }
     @FXML
-    protected void onQuizButtonClick() {
-        Application.largeScene("quizPage-view.fxml", quizButton.getScene());
-    }
-    @FXML
     protected void onLoginButtonClick(){
-        Application.largeScene("admin-view.fxml", loginButton.getScene()); //Goes to admin-view
+        Application.largeScene("quizPage-view.fxml", loginButton.getScene()); //Goes to quizhomeview
     }
     @FXML
     protected void onRegisterButtonClick(){
