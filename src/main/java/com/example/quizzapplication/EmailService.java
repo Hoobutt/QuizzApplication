@@ -4,12 +4,17 @@ import jakarta.mail.*;
 import jakarta.mail.internet.*;
 import java.util.Properties;
 
-public class EmailHelper {
+public class EmailService {
     public static int sendEmail(String message, String number, String email, String name) {
 
+        // Credentials for the email used to send messages
         final String uname = "team.echo.quiz25@gmail.com";
         final String pass = "szwtvaytkunebjzi";
 
+        final String[] toEmails = {"robertehansen@csus.edu", "huberther@csus.edu", "warnerkanzler@csus.edu "};
+
+
+        // Pointing to Gmail SMTP server
         Properties properties = System.getProperties();
         properties.put("mail.smtp.host", "smtp.gmail.com");
         properties.put("mail.smtp.port", "465");
@@ -26,10 +31,14 @@ public class EmailHelper {
         try {
             MimeMessage mimeMessage = new MimeMessage(session);
 
+            // Add the recipients to the email
+            for (String toEmail : toEmails) {
+                mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(toEmail));
+            }
+
             mimeMessage.setFrom(new InternetAddress("team.echo.quiz25@gmail.com"));
-            mimeMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("robbyhansen101@gmail.com"));
             mimeMessage.setSubject("Quizz Application - New Message from " + email);
-            mimeMessage.setText("Message from: " + email + "\nPhone number: " + number + "\nName: " + "name" +"\n\n" + message);
+            mimeMessage.setText("Message from: " + email + "\nPhone number: " + number + "\nName: " + name +"\n\n" + message);
 
             Transport.send(mimeMessage);
 
