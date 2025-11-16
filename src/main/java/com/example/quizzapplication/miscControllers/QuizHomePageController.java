@@ -95,4 +95,10 @@ public class QuizHomePageController {
             }
         }
     }
+
+    // Use this method to get the number of available quizzes, used to test search functionality
+    public int AvailableQuizesHook() {
+        return availableQuizzes.length;
+    }
+
 }
