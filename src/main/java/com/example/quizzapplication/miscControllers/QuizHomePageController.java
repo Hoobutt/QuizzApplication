@@ -4,7 +4,6 @@ import com.example.quizzapplication.Application;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
@@ -17,11 +16,11 @@ public class QuizHomePageController {
     @FXML
     private ListView<String> quizListView;
     @FXML
-    private Button searchButton;
-    @FXML
-    private ScrollPane scrollPane;
-    @FXML
     private TextField searchField;
+    @FXML
+    private Button adminpanelButton; //Implement adminpanelbutton for admins to enter the admin panel.
+    @FXML
+    private boolean checkAdminPermissions;
 
     private String[] availableQuizzes = { //Sample Quizzes
             "Math - Algebra Basics",
@@ -53,6 +52,11 @@ public class QuizHomePageController {
     }
 
     @FXML
+    protected void onAdminPanelButtonClick() {
+        Application.largeScene("admin-panel.fxml", adminpanelButton.getScene());
+    }
+
+    @FXML
     protected void onEnterQuizButtonClick() {
         String selectedQuiz = quizListView.getSelectionModel().getSelectedItem();
         if (selectedQuiz != null && !selectedQuiz.isEmpty()) {
@@ -61,7 +65,7 @@ public class QuizHomePageController {
             alert.setHeaderText("Ready?");
             alert.setContentText("You are about to start: " + selectedQuiz + "\n\nYou have 9000 hours to complete this quiz."); //Change time depending on quiz when you create teh quiz function.
 
-            //Goes to quiz taking scene quiz-taking-view.fxml after pressing enterQuizButton.
+            //Goes to quiz taking scene quizSession-view.fxml after pressing enterQuizButton.
 
             Alert successAlert = new Alert(AlertType.INFORMATION); //Testing Quiz Alert
             successAlert.setTitle("Quiz Started");

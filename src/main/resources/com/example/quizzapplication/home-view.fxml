@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,34 +18,35 @@
     </padding>
     <children>
         <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="𝑬𝒄𝒉𝒐 𝑸𝒖𝒊𝒛" textAlignment="CENTER" wrappingWidth="559.892578125">
-         <font>
-            <Font size="36.0" />
-         </font></Text>
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
         <HBox alignment="CENTER" prefHeight="38.0" prefWidth="129.0" spacing="100.0">
-         <children>
-            <AnchorPane prefHeight="185.0" prefWidth="442.0">
-               <children>
-                  <Button fx:id="loginButton" layoutX="195.0" layoutY="105.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
-                  <TextField alignment="CENTER" layoutX="163.0" layoutY="33.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Login" />
-                  <TextField alignment="CENTER" layoutX="141.0" layoutY="66.0" maxWidth="-Infinity" prefHeight="25.0" prefWidth="160.0" promptText="Password" />
-                  <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="139.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Register" />
-               </children>
-            </AnchorPane>
-         </children>
+            <children>
+                <AnchorPane prefHeight="185.0" prefWidth="442.0">
+                    <children>
+                        <Button fx:id="loginButton" layoutX="195.0" layoutY="105.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
+                        <TextField fx:id="usernameField" alignment="CENTER" layoutX="163.0" layoutY="33.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Username" />
+                        <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="139.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Register" />
+                        <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="139.0" layoutY="70.0" promptText="Password" />
+                    </children>
+                </AnchorPane>
+            </children>
         </HBox>
-      <HBox alignment="BOTTOM_CENTER">
-         <children>
-              <ButtonBar buttonMinWidth="75.0" prefHeight="40.0" prefWidth="506.0" translateY="40.0">
-                  <buttons>
-                      <Separator prefWidth="200.0" visible="false" />
-                      <Button fx:id="socialButton" mnemonicParsing="false" onAction="#onSocialButtonClick" text="Social" />
-                      <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
-                      <Button fx:id="contactButton" mnemonicParsing="false" onAction="#onContactButtonClick" text="Contact" />
-                      <Button fx:id="creditsButton" mnemonicParsing="false" onAction="#onCreditsButtonClick" text="Credits" />
-                      <Separator prefWidth="200.0" visible="false" />
-                  </buttons>
-              </ButtonBar>
-         </children>
-      </HBox>
+        <HBox alignment="BOTTOM_CENTER">
+            <children>
+                <ButtonBar buttonMinWidth="75.0" prefHeight="40.0" prefWidth="506.0" translateY="40.0">
+                    <buttons>
+                        <Separator prefWidth="200.0" visible="false" />
+                        <Button fx:id="socialButton" mnemonicParsing="false" onAction="#onSocialButtonClick" text="Social" />
+                        <Button fx:id="aboutButton" mnemonicParsing="false" onAction="#onAboutButtonClick" text="About" />
+                        <Button fx:id="contactButton" mnemonicParsing="false" onAction="#onContactButtonClick" text="Contact" />
+                        <Button fx:id="creditsButton" mnemonicParsing="false" onAction="#onCreditsButtonClick" text="Credits" />
+                        <Separator prefWidth="200.0" visible="false" />
+                    </buttons>
+                </ButtonBar>
+            </children>
+        </HBox>
     </children>
 </VBox>
