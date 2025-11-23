@@ -9,6 +9,4 @@ module com.example.quizzapplication {
     exports com.example.quizzapplication;
     exports com.example.quizzapplication.miscControllers;
     opens com.example.quizzapplication.miscControllers to javafx.fxml;
-    exports com.example.quizzapplication.manager;
-    opens com.example.quizzapplication.manager to javafx.fxml;
 }

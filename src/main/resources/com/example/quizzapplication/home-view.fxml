@@ -26,7 +26,7 @@
             <children>
                 <AnchorPane prefHeight="185.0" prefWidth="442.0">
                     <children>
-                        <Button fx:id="loginButton" layoutX="195.0" layoutY="105.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
+                        <Button fx:id="loginButton" layoutX="196.0" layoutY="106.0" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
                         <TextField fx:id="usernameField" alignment="CENTER" layoutX="163.0" layoutY="33.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Username" />
                         <Button fx:id="registerButton" alignment="CENTER" contentDisplay="CENTER" layoutX="189.0" layoutY="139.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Register" />
                         <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="139.0" layoutY="70.0" promptText="Password" />

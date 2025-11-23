@@ -10,22 +10,14 @@ import javafx.scene.control.TextField;
 import java.sql.*;
 
 public class RegisterController {
-    @FXML
-    private Button backButton;
-    @FXML
-    private TextField usernameField;
-    @FXML
-    private PasswordField passwordField;
-    @FXML
-    private PasswordField confirmPasswordField;
-    @FXML
-    private TextField emailField;
-    @FXML
-    private Button registerButton;
-    @FXML
-    private CheckBox adminCheckBox;
-    @FXML
-    private TextField adminCodeField;
+    @FXML private Button backButton;
+    @FXML private TextField usernameField;
+    @FXML private PasswordField passwordField;
+    @FXML private PasswordField confirmPasswordField;
+    @FXML private TextField emailField;
+    @FXML private Button registerButton;
+    @FXML private CheckBox adminCheckBox;
+    @FXML private TextField adminCodeField;
 
     private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/users";
     private static final String DB_USER = "root";
@@ -35,11 +27,11 @@ public class RegisterController {
 
     @FXML
     public void initialize() {
-        // Test database connection on startup
+        // Tests the database connection
         testDatabaseConnection();
         adminCodeField.setVisible(false);
 
-        // Add listener to admin checkbox
+        // Admin Checkbox
         adminCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
             adminCodeField.setVisible(newValue);
             if (!newValue) {
@@ -53,7 +45,7 @@ public class RegisterController {
             System.out.println("Database connection successful!");
         } catch (SQLException e) {
             System.out.println("Database connection failed: " + e.getMessage());
-            showAlert("Database Error", "Cannot connect to database. Please check your MySQL server.");
+            showAlert("Database Error", "Cannot connect to database. Check MySQL Database Connection");
         }
     }
 
@@ -99,7 +91,7 @@ public class RegisterController {
             return;
         }
 
-        // Admin registration validation
+        // Admin registration validation (Admin Code is "1234")
         if (isAdmin) {
             if (adminCode.isEmpty()) {
                 showAlert("Error", "Please enter the admin registration code.");
@@ -113,7 +105,7 @@ public class RegisterController {
 
         Boolean usernameTaken = isUsernameTaken(username);
         if (usernameTaken == null) {
-            showAlert("Database Error", "Unable to check username availability. Please try again.");
+            showAlert("Database Error", "Unable to check username availability.");
             return;
         } else if (usernameTaken) {
             showAlert("Error", "Username '" + username + "' already exists. Please choose a different one.");
@@ -122,7 +114,7 @@ public class RegisterController {
 
         Boolean emailTaken = isEmailTaken(email);
         if (emailTaken == null) {
-            showAlert("Database Error", "Unable to check email availability. Please try again.");
+            showAlert("Database Error", "Unable to check email availability.");
             return;
         } else if (emailTaken) {
             showAlert("Error", "Email '" + email + "' already registered. Please use a different email.");
@@ -137,7 +129,7 @@ public class RegisterController {
             if (isAdmin) {
                 Application.largeScene("admin-view.fxml", registerButton.getScene());
             } else {
-                Application.changeScene("quizHomePage-view.fxml", registerButton.getScene());
+                Application.largeScene("quizHomePage-view.fxml", registerButton.getScene());
             }
         } else {
             showAlert("Error", "Registration failed. Please try again.");
@@ -186,7 +178,7 @@ public class RegisterController {
             statement.setString(4, role);
 
             int rowsAffected = statement.executeUpdate();
-            System.out.println("Registration successful for user: " + username);
+            System.out.println("Registration successful for: " + username);
             return rowsAffected > 0;
         } catch (SQLException e) {
             System.err.println("Error registering user: " + e.getMessage());
