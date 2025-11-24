@@ -38,7 +38,10 @@ public class ContactController {
     @FXML
     protected void onSubmitButtonClick() {
 
-        if (EmailService.sendEmail(messageField.getText(), numberField.getText(), emailField.getText(), nameField.getText()) == 0) {
+        EmailService emailService = new EmailService();
+        int errorStatus = emailService.sendEmail(messageField.getText(), numberField.getText(), emailField.getText(), nameField.getText());
+
+        if (errorStatus == 0) {
             nameField.clear();
             emailField.clear();
             numberField.clear();
