@@ -24,8 +24,8 @@ public class QuizHomePageController {
     @FXML private Button adminpanelButton;
 
     // Connects to Database
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/users";
-    private static final String DB_USER = "root";
+    private static final String DB_URL = "jdbc:postgresql://db.rlhgofxmecvirnwxrfzo.supabase.co:5432/postgres?sslmode=require";
+    private static final String DB_USER = "postgres";
     private static final String DB_PASSWORD = "2iuks3dy";
 
     // Store the current user's role and ID

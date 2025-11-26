@@ -19,10 +19,9 @@ public class RegisterController {
     @FXML private CheckBox adminCheckBox;
     @FXML private TextField adminCodeField;
 
-    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/users";
-    private static final String DB_USER = "root";
+    private static final String DB_URL = "jdbc:postgresql://db.rlhgofxmecvirnwxrfzo.supabase.co:5432/postgres?sslmode=require";
+    private static final String DB_USER = "postgres";
     private static final String DB_PASSWORD = "2iuks3dy";
-
     private static final String ADMIN_REGISTRATION_CODE = "1234";
 
     @FXML
