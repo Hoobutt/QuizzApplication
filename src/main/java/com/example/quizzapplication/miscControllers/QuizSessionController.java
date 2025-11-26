@@ -151,11 +151,29 @@ public class QuizSessionController {
                 throw new Exception("No questions found for this quiz");
             }
 
+            shuffleQuestions();
+
             initializeQuizSession();
         } catch (Exception e) {
             showAlert("Error", "Failed to load questions: " + e.getMessage());
             Application.changeScene("quizHomePage-view.fxml", backButton.getScene());
         }
+    }
+
+    private void shuffleQuestions() {
+        List<Integer> indices = new ArrayList<>();
+        for (int i = 0; i < questions.size(); i++) {
+            indices.add(i);
+        }
+        java.util.Collections.shuffle(indices);
+        List<Question> shuffledQuestions = new ArrayList<>();
+        List<String> shuffledUserAnswers = new ArrayList<>();
+        for (int index : indices) {
+            shuffledQuestions.add(questions.get(index));
+            shuffledUserAnswers.add(userAnswers.get(index));
+        }
+        questions = shuffledQuestions;
+        userAnswers = shuffledUserAnswers;
     }
 
     private void initializeQuizSession() {
