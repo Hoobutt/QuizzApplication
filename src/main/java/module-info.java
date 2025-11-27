@@ -3,6 +3,7 @@ module com.example.quizzapplication {
     requires javafx.fxml;
     requires java.desktop;
     requires java.sql;
+    requires jakarta.mail;
 
 
     opens com.example.quizzapplication to javafx.fxml;
