@@ -6,17 +6,17 @@ import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Application extends javafx.application.Application {
     Stage stage;
 
-
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("home-view.fxml"));
         Scene HomeScene = new Scene(fxmlLoader.load(), 600, 400);
-
         this.stage = stage;
         stage.setTitle("Home");
         stage.setScene(HomeScene);
@@ -50,5 +50,19 @@ public class Application extends javafx.application.Application {
         stage.setScene(newScene);
         stage.setMaximized(true);
         stage.centerOnScreen();
+    }
+
+    private static Map<String, Object> sessionData = new HashMap<>();
+
+    public static void setSessionData(String key, Object value) {
+        sessionData.put(key, value);
+    }
+
+    public static Object getSessionData(String key) {
+        return sessionData.get(key);
+    }
+
+    public static void clearSessionData(String key) {
+        sessionData.remove(key);
     }
 }

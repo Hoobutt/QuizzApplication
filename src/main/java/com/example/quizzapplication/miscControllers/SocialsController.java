@@ -7,18 +7,7 @@ import java.awt.Desktop;
 import java.net.URI;
 
 public class SocialsController {
-    @FXML
-    private Button backButton;
-    @FXML
-    private Button Instagram;
-    @FXML
-    private Button Reddit;
-    @FXML
-    private Button GitHub;
-    @FXML
-    private Button LinkedIn;
-    @FXML
-    private Button Twitter;
+    @FXML private Button backButton;
 
     @FXML
     protected void onBackButtonClick() {
