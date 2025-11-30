@@ -67,7 +67,10 @@
                         </VBox>
                     </VBox>
                     <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
-                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@PNG's/IMG_1336.png" />
+                     </image></ImageView>
                         <VBox alignment="CENTER" spacing="5">
                             <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Bashar Levingston" />
                             <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Designer" />
