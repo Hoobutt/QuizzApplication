@@ -39,9 +39,9 @@ public class AdminController {
     @FXML private TableColumn<Result, Double> resultPercentageColumn;
     @FXML private TableColumn<Result, String> resultTimeColumn;
 
-    private static final String DB_URL = "jdbc:postgresql://db.rlhgofxmecvirnwxrfzo.supabase.co:5432/postgres?sslmode=require";
-    private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "2iuks3dy";
+    private static final String DB_URL = "jdbc:postgresql://db.rlhgofxmecvirnwxrfzo.supabase.co:5432/postgres";
+    private static final String DB_USER = "postgres"; // Regular username
+    private static final String DB_PASSWORD = "AFxCbFEfDTzvEvew";
 
     private CreateQuestionController createQuestionController;
 
