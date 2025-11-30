@@ -25,9 +25,9 @@ public class HomeController {
     @FXML private PasswordField passwordField;
 
     // Database connection details
-    private static final String DB_URL = "jdbc:postgresql://db.rlhgofxmecvirnwxrfzo.supabase.co:5432/postgres?sslmode=require";
-    private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "2iuks3dy";
+    private static final String DB_URL = "jdbc:postgresql://db.rlhgofxmecvirnwxrfzo.supabase.co:5432/postgres";
+    private static final String DB_USER = "postgres"; // Regular username
+    private static final String DB_PASSWORD = "AFxCbFEfDTzvEvew";
 
     @FXML
     protected void onSocialButtonClick() {
