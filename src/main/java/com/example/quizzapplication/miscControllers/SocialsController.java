@@ -15,7 +15,7 @@ public class SocialsController {
     }
     @FXML
     protected void GitHub() {
-        openWebPage("https://www.instagram.com/groupechoquiz/");
+        openWebPage("https://github.com/Bobburritto/QuizzApplication");
     }
     @FXML
     protected void Twitter() {

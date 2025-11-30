@@ -49,10 +49,6 @@ public class QuizHomePageController {
         );
         enterQuizButton.setDisable(true);
 
-        // Hide admin panel button by default
-        adminpanelButton.setVisible(false);
-        adminpanelButton.setManaged(false);
-
         // Check user role and adjust UI accordingly
         checkUserRoleAndAdjustUI();
     }

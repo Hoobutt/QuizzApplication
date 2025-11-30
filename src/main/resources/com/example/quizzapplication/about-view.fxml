@@ -22,21 +22,27 @@
                 <RowConstraints minHeight="10.0" percentHeight="33.3" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                     <children>
-                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 3" />
-                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
-                    </children>
-                </VBox>
-                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                    <children>
-                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 5" />
-                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Hubert Her" />
+                        <Label style="-fx-font-size: 14px; -fx-text-alignment: center; -fx-wrap-text: true;" text="Education: B.S. Computer Science at CSU&#10;Skills: Problem Solving, Time Management&#10;Technical: Java Basics" wrapText="true" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                     <children>
-                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 2" />
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Julius Gutierrez" />
+                  <Label style="-fx-font-size: 14px; -fx-text-alignment: center; -fx-wrap-text: true;" text="Education: Pursuing B.S. in Computer Science at Sac State&#10;Professional Skills: teamwork, time-management, organization&#10;Technical Skills: C++, Java, Git, linux, Data Structures and Algorithms&#10;Work Experience: management at restaurant " wrapText="true" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Kelsey Martinez" />
+                        <Label style="-fx-font-size: 14px; -fx-text-alignment: center; -fx-wrap-text: true;" text="Education: A.A. Computer Science, B.S. in progress&#10;Skills: Documentation, Detail-oriented, Research&#10;Technical: C++, Java, Data Structures&#10;Experience: Business Owner" wrapText="true" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 3" />
                         <Label style="-fx-font-size: 14px;" text="Role/Description" />
                     </children>
                 </VBox>
@@ -46,10 +52,10 @@
                         <Label style="-fx-font-size: 14px;" text="Role/Description" />
                     </children>
                 </VBox>
-                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                     <children>
-                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 6" />
-                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Warner Kanzler" />
+                        <Label style="-fx-font-size: 14px; -fx-text-alignment: center; -fx-wrap-text: true;" text="Education: B.S. Computer Science at Sac State&#10;Skills: Project Management&#10;Technical: Java Basics&#10;Experience: Caltrans Intern" wrapText="true" />
                     </children>
                 </VBox>
                 <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
@@ -58,15 +64,9 @@
                         <Label style="-fx-font-size: 14px;" text="Role/Description" />
                     </children>
                 </VBox>
-                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                     <children>
-                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 3" />
-                        <Label style="-fx-font-size: 14px;" text="Role/Description" />
-                    </children>
-                </VBox>
-                <VBox alignment="CENTER" spacing="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                    <children>
-                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 1" />
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Person 6" />
                         <Label style="-fx-font-size: 14px;" text="Role/Description" />
                     </children>
                 </VBox>
