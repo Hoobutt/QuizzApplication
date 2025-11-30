@@ -2,112 +2,116 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<?import javafx.geometry.Insets?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFA88F;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.miscControllers.CreditsController">
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #FFA88F;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzapplication.miscControllers.CreditsController">
     <children>
-        <Label layoutX="250.0" layoutY="20.0" text="Credits" style="-fx-text-fill: #2c3e50;">
+        <Label layoutY="30.0" style="-fx-text-fill: #2c3e50; -fx-alignment: CENTER;" text="Credits" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <font>
-                <Font name="System Bold" size="28.0" />
+                <Font name="System Bold" size="36.0" />
             </font>
         </Label>
-        <VBox layoutX="30.0" layoutY="60.0" spacing="15" prefWidth="540">
-            <padding>
-                <Insets top="10" right="20" bottom="10" left="20" />
-            </padding>
-            <HBox spacing="8" alignment="CENTER_LEFT">
-                <Text text="•" style="-fx-fill: #2c3e50;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Project Manager:" style="-fx-fill: #2c3e50; -fx-font-weight: bold;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Warner Kanzler" style="-fx-fill: #34495e;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-            </HBox>
-            <HBox spacing="8" alignment="CENTER_LEFT">
-                <Text text="•" style="-fx-fill: #2c3e50;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Quality Control:" style="-fx-fill: #2c3e50; -fx-font-weight: bold;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Julius Gutierrez" style="-fx-fill: #34495e;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-            </HBox>
-            <HBox spacing="8" alignment="CENTER_LEFT">
-                <Text text="•" style="-fx-fill: #2c3e50;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Designers:" style="-fx-fill: #2c3e50; -fx-font-weight: bold;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Hubert Her, Bashar Levingston" style="-fx-fill: #34495e;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-            </HBox>
-            <HBox spacing="8" alignment="CENTER_LEFT">
-                <Text text="•" style="-fx-fill: #2c3e50;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Programmers:" style="-fx-fill: #2c3e50; -fx-font-weight: bold;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Robert Hanse, Kalen Nelson, Hubert Her" style="-fx-fill: #34495e;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-            </HBox>
-            <HBox spacing="8" alignment="CENTER_LEFT">
-                <Text text="•" style="-fx-fill: #2c3e50;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Analysts:" style="-fx-fill: #2c3e50; -fx-font-weight: bold;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-                <Text text="Kelsey Martinez, Muska Hassan" style="-fx-fill: #34495e;">
-                    <font>
-                        <Font size="18.0" />
-                    </font>
-                </Text>
-            </HBox>
-        </VBox>
-        <Button fx:id="backButton" layoutX="520.0" layoutY="350.0" mnemonicParsing="false" onAction="#onBackButtonClick"
-                style="-fx-background-color: #E67E73; -fx-text-fill: white; -fx-font-size: 14; -fx-padding: 6 12;"
-                text="Back" />
+        <ScrollPane style="-fx-background: #FFA88F; -fx-border-color: #FFA88F; -fx-fit-to-width: true;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+            <content>
+                <GridPane alignment="CENTER" hgap="40" vgap="30">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" prefWidth="350" />
+                        <ColumnConstraints halignment="CENTER" prefWidth="350" />
+                        <ColumnConstraints halignment="CENTER" prefWidth="350" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints prefHeight="120" valignment="CENTER" />
+                        <RowConstraints prefHeight="120" valignment="CENTER" />
+                        <RowConstraints prefHeight="120" valignment="CENTER" />
+                    </rowConstraints>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@PNG's/IMG_2178.jpg" />
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Warner Kanzler" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Project Manager, Designer" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@PNG's/Julius.jpg" />
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Julius Gutierrez" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Quality Control" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@PNG's/IMG20251130142336.jpg" />
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Hubert Her" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Designer, Programmer" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Bashar Levingston" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Designer" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@PNG's/Screenshot_2025-11-30.png" />
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Robert Hansen" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Programmer, Quality Control" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Kalen Nelson" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Programmer" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@PNG's/Facetune_08-07-2025-11-33-28.jpg" />
+                            </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Kelsey Martinez" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Analyst" />
+                        </VBox>
+                    </VBox>
+                    <VBox alignment="CENTER" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox alignment="CENTER" spacing="5">
+                            <Text style="-fx-fill: #2c3e50; -fx-font-weight: bold; -fx-font-size: 18; -fx-text-alignment: center;" text="Muska Hassan" />
+                            <Text style="-fx-fill: #34495e; -fx-font-size: 14; -fx-text-alignment: center;" text="Analyst" />
+                        </VBox>
+                    </VBox>
+                </GridPane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #E67E73; -fx-text-fill: white; -fx-font-size: 16; -fx-padding: 8 16;" text="Back" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
     </children>
 </AnchorPane>

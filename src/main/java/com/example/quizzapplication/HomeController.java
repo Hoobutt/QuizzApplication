@@ -46,7 +46,7 @@ public class HomeController {
 
     @FXML
     protected void onCreditsButtonClick() {
-        Application.changeScene("credits-view.fxml", creditsButton.getScene());
+        Application.largeScene("credits-view.fxml", creditsButton.getScene());
     }
 
     @FXML
