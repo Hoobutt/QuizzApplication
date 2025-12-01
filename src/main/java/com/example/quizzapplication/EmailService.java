@@ -9,7 +9,7 @@ public class EmailService {
     // Credentials for the email used to send messages
     final String uname = "team.echo.quiz25@gmail.com";
     final String pass = "szwtvaytkunebjzi";
-    final String[] toEmails = {"robertehansen@csus.edu", "huberther@csus.edu", "warnerkanzler@csus.edu"};
+    final String[] toEmails = {"robertehansen@csus.edu", "huberther@csus.edu", "warnerkanzler@csus.edu", "kelseymartinez@csus.edu", "juliusagutierrez@csus.edu", "mhassan5@csus.edu", "blevingston@csus.edu"};
 
     // Hook for testing purposes
     private MimeMessage mimeMessageHook;
